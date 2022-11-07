@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+      <main>
+        <div class="container">
+            <h1 class="text-center py-4 text-danger">Archive's 9 greatest Songs!</h1>
+            <div class="card my-3 p-3">
+                <div class="card-body">
+                    <div class="text-center" id="display">The Display is currently Empty</div>
+                </div>
+            </div>             
+          </div>
+        <div class="album py-5 bg-light">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn w-100 btn-dark text-white mb-3" onclick="play('R')">
+                            <b>R</b>emove
+                            <audio src="./clip/Remove.mp3" id="R">
+                        </button>                    
+                        <button class="drum-pad btn w-100 btn-danger text-white mb-3 mx-2" onclick="pause('R')">
+                          <i class="bi bi-pause" id=" "></i>
+                          </button>                    
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn btn-dark text-white mb-3" onclick="play('C')">
+                            <b>C</b>ome On Get High
+                            <audio src="./clip/Come On Get High.mp3" id="C">
+                        </button>                      
+                        <button class="drum-pad btn btn-danger text-white mb-3 mx-2" onclick="pause('C')">
+                          <i class="bi bi-pause" id=" "></i>
+                        </button>                      
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn w-100 btn-dark text-white mb-3" onclick="play('F')">
+                            <b>F</b>old
+                            <audio src="./clip/Archive_Fold.mp3" id="F">
+                        </button>     
+                        <button class="drum-pad btn btn-danger text-white mb-3 mx-2" onclick="pause('F')">
+                          <i class="bi bi-pause" id=" "></i>
+                        </button>                   
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn w-100 btn-dark text-white mb-3" onclick="play('L')">
+                            <b>L</b>ights
+                            <audio src="./clip/Archive_Lights.mp3" id="L">
+                        </button>        
+                        <button class="drum-pad btn btn-danger text-white mb-3 mx-2" onclick="pause('L')">
+                          <i class="bi bi-pause" id=" "></i>
+                        </button>                 
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn w-100 btn-dark text-white mb-3" onclick="play('I')">
+                            <b>I</b> Will Fade
+                            <audio src="./clip/Archive_I_Will_Fade.mp3" id="I">
+                        </button>  
+                        <button class="drum-pad btn btn-danger text-white mb-3 mx-2" onclick="pause('I')">
+                          <i class="bi bi-pause" id=" "></i>
+                        </button>                       
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn w-100 btn-dark text-white mb-3" onclick="play('H')">
+                            <b>H</b>eadlights
+                            <audio src="./clip/Archive_Headlights.mp3" id="H">
+                        </button>                      
+                        <button class="drum-pad btn btn-danger text-white mb-3 mx-2" onclick="pause('H')">
+                          <i class="bi bi-pause" id=" "></i>
+                        </button>   
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn w-100 btn-dark text-white mb-3" onclick="play('N')">
+                            <b>N</b>othing Else
+                            <audio src="./clip/Nothing else.mp3" id="N">
+                        </button>      
+                        <button class="drum-pad btn btn-danger text-white mb-3 mx-2" onclick="pause('N')">
+                          <i class="bi bi-pause" id=" "></i>
+                        </button>                   
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn w-100 btn-dark text-white mb-3" onclick="play('P')">
+                            <b>P</b>ulse
+                            <audio src="./clip/Pulse.mp3" id="P">
+                        </button>               
+                        <button class="drum-pad btn btn-danger text-white mb-3 mx-2" onclick="pause('P')">
+                          <i class="bi bi-pause" id=" "></i>
+                        </button>          
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273547b598965e94aba957dbb74">      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button class="drum-pad btn w-100 btn-dark text-white mb-3" onclick="play('A')">
+                            <b>A</b>gain
+                            <audio src="./clip/Again.mp3" id="A">
+                        </button>                
+                        <button class="drum-pad btn btn-danger text-white mb-3 mx-2" onclick="pause('A')">
+                          <i class="bi bi-pause" id=" "></i>
+                        </button>           
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
